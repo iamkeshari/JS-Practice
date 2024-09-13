@@ -4,6 +4,9 @@ const accountId = 142354
  var accountPassword = '123'; 
  accountCity = 'Jaipur';
 
+ console.log(accountId);
+ 
+
  //accountId = 2
  accountEmail = 'hchc@hc.com'
  accountPassword ='123456';
