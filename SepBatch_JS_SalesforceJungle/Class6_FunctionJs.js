@@ -10,7 +10,7 @@
     console.log('Hello'+ StudentName);
 }
 
-greetStudents('Biplab');*/
+greetStudents('Biplab');
 
 function greetStudents(StudentName){
 return 'Hello' +' '+  StudentName;
@@ -31,4 +31,27 @@ let greetStudents2= (StudentName) => {
     return 'Hello' +' '+  StudentName;
     }
     
-    console.log(greetStudents1 ('Rananayak'));
+    console.log(greetStudents2 ('Rananayak'));
+   
+==========================================================
+
+function greetStudent2 (name){
+    console.log(`Good Morning, ${name}`);  //void with parameter
+}
+function greetStudents (){
+     return `Good Morning Everyone`;  //without  parameter with return
+}
+greetStudent2('Biplab');
+console.log(greetStudents());
+
+*/
+let greetletStudents =  () => {
+    return `Good Morning Everyone`;  //without  parameter with return
+}
+console.log(greetletStudents());
+
+let greetletStudents1 =  (name) => {
+    console.log(`Good Morning, ${name}`);  
+}
+greetletStudents1('Biplab'); // ethi call karibaku pade 
+

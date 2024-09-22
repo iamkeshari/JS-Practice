@@ -4,37 +4,40 @@ let value3 = '2';
 let value4 = true;
 let value5 = 1;
 let value6 ;
-/*
+
 if (value1 == value2){
 console.log('Matched');
 }else{
-console.log('Not Matched');
+console.log('Not Matched'); //Matched
 }
 
 if (value1==value3) {
 console.log('Matched');
 } else {
-console.log('Not Matched');
+console.log('Not Matched'); //Not Matched
 }
+
+
 if (value4) {
 console.log('Matched');
 } else {
-console.log('Not Matched');
-}*/
+console.log('Not Matched'); //Matched
+}
 
 if (value1 == value5) {
-    console.log('Matched');
+    console.log('Matched');  //Matched
 }else {
     console.log('Not-Matched');
 }
 
 if (value1 === value5) {
-    console.log('Matched');
+    console.log('Matched'); //Not-Matched
 }else {
     console.log('Not-Matched');
 }
-if (value1) {
+
+if (value1) {                 //Matched
     console.log('Matched');
 } else {
     console.log('Not Matched');
- }
+ } 

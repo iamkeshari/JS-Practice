@@ -6,8 +6,6 @@ let Student5 = {'Name':'Aditya', 'Age':23, 'class':undefined, 'fees Paid': 'Fals
 let Student6 = {'Name':'Kumar', 'Age':29, 'class':undefined, 'fees Paid': 'True', 'Address':{'Street':'xyz456','Pincode':1677}};
 let Students = [Student1,Student2,Student3,Student5,Student6];
 console.log(Students);
-console.log(Students[2].Address.Street);
-
 
 // Concatenation 
 
@@ -16,3 +14,9 @@ console.log(concat1);
 
 let concat2 = `Hello ${Student2.Name}`;
 console.log(concat2);
+
+let result1 = 'Hello Everyone, ' + Students[3].Name+ ' got good marks';
+let result2 = `Hello Everyone ${Student3.Name} got good marks`;
+console.log(result1);
+console.log(result2);
+
