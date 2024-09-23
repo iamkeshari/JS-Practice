@@ -7,7 +7,7 @@ let students = [student1,student2,student3,student4];
 console.log(students);
  
 let mapStudent = students.map( str => {
-    return {'Student Name':str.Name, 'Fees Paid':str.feesPaid, 'Age':str.Age, 'Street':str.Street, 'Class':str.class, 'Pincode':str.Pincode};
+    return {'Student Name':str.Name, 'Street ':str.Street};
 })
 
 console.log(mapStudent);
