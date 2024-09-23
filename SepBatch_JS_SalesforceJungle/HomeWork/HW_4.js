@@ -1,7 +1,7 @@
 /* "Write a code to print the length of the string using loop and
  without using inbuilt length method. " */
 
-let stringname = 'Biplab';
+let stringname = 'Biplabghg';
 let strarr = Array.from(stringname);
 let len = 0;
 
