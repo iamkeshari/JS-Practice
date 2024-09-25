@@ -25,3 +25,10 @@ for (index ; checkCondition(index); index = incre(index)) {
  
     
 }
+
+//Using For Each
+
+students.forEach((stud) =>{
+    console.log(stud);
+    
+})
