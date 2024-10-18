@@ -14,7 +14,7 @@ console.log(filterStudents);
 
 let mapFilter = students.filter(x=> {
     return x.Age ===27;
-}).map(x => {
+}).map(x => {                               //it can show filterd data using map
     return{ 'StudName': x.Name, 'Age':x.Age}
 })
 console.log(mapFilter);
