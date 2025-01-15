@@ -79,3 +79,43 @@ console.log('fieldPlayers' , fieldPlayers);
 
 let allPlayers = [...players1,...players2]
 console.log('allplayesrs',allPlayers);
+
+//4. During the game, India (team 1) used 3 substitute players. So create a new array ('players1Final') 
+//containing all the original team1 players plus 'Sandeep', 'John' and 'Sunil'
+
+ let players1Final = [...players1, 'Sandeep', 'John' ,'Sunil'] ;
+ console.log('players1final',players1Final);
+
+ //5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
+ let {team1 , x:draw , team2} = game.odds;
+console.log('team1',team1);
+console.log('draw', draw);
+console.log('team2',team2);
+
+//6. The team with the lower odd is more likely to win. 
+//Print to the console which team is more likely to win, 
+//WITHOUT using an if/else statement or the ternary operator.
+
+team1 < team2 && console.log('Team 1 will win ');
+team2 < team1 && console.log('Team 2 will win ');
+
+//7. Loop over the game.Century array and print each player name to the 
+//console, along with the Century number (Example: "Century 1: Kohli")
+
+for (let [index,value] of game.Century.entries()) {
+console.log(`Century ${index + 1} : ${value}`); 
+}
+
+// 8. Use a loop to calculate the average odd and log it to the console 
+let sum = 0;
+let counter = 0;
+for (let currItem of Object.values(game.odds)) {
+  sum = sum + currItem;
+  counter = counter + 1; 
+  }
+
+  console.log('Sum',sum);
+  console.log('Counter',counter);
+  console.log('Average Round', Math.round(sum/counter));
+  console.log('Average ',sum/counter);
+  

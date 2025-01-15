@@ -32,8 +32,9 @@ let greetStudents2= (StudentName) => {
     }
     
     console.log(greetStudents2 ('Rananayak'));
-   
+  
 ==========================================================
+*/ 
 
 function greetStudent2 (name){
     console.log(`Good Morning, ${name}`);  //void with parameter
@@ -44,14 +45,50 @@ function greetStudents (){
 greetStudent2('Biplab');
 console.log(greetStudents());
 
-*/
-let greetletStudents =  () => {
+
+let arrowfunction =  () => {
     return `Good Morning Everyone`;  //without  parameter with return
 }
-console.log(greetletStudents());
+console.log(arrowfunction());
 
-let greetletStudents1 =  (name) => {
+let arrowfunction1 =  (name) => {
     console.log(`Good Morning, ${name}`);  
 }
-greetletStudents1('Biplab'); // ethi call karibaku pade 
+arrowfunction1('Biplab'); // ethi call karibaku pade 
 
+
+//Function Declaration
+
+// Function Declaration
+function calc1(number1, number2) {
+    let sum = number1 + number2;
+    return sum;
+};
+
+// Function Expression
+let calc2 = function (number1, number2) {
+    let sum = number1 + number2;
+    return sum;
+};
+
+let calc1Result = calc1(15, 20);
+console.log('calc1Result', calc1Result);
+
+let calc2Result = calc2(33, 20);
+console.log('calc2Result', calc2Result);
+
+//Call Back Functions
+function welcomeMe(name,callMe){
+    console.log(`hello ${name}`);
+    
+}
+function greetMeToo(){
+    console.log(`Welcome My Js Practice`);
+    
+}
+function goodBye(){
+    console.log(`See You in Tommorrow`);
+    
+}
+welcomeMe('Biplab',greetMeToo);
+welcomeMe('Biplab',goodBye);
