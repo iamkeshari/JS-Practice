@@ -32,3 +32,12 @@ students.forEach((stud) =>{
     console.log(stud);
     
 })
+
+
+let myFavCars = ['Audi', 'BMW','Maruti','Mercedeze'];
+//for each(initialization, condition , increment/decrement)
+
+for(let i=0; i<myFavCars.length; i++){
+    console.log(`${i+ 1}. ${myFavCars[i]} `);
+    
+}

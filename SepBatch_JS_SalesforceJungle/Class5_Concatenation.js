@@ -19,4 +19,3 @@ let result1 = 'Hello Everyone, ' + Students[3].Name+ ' got good marks';
 let result2 = `Hello Everyone ${Student3.Name} got good marks`;
 console.log(result1);
 console.log(result2);
-

@@ -11,3 +11,8 @@ let studentsNew = [Student1New,Student2New,Student3New];
 
 let allStudents = [...studentsNew,...students]; // add 2 array in single array
 console.log(allStudents);
+
+// Expand the string
+let myName = 'My Name is Biplab ';
+console.log(myName);
+console.log(...myName);
