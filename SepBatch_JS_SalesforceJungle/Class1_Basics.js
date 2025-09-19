@@ -13,7 +13,7 @@ console.log(index); */
 
 //Data Type - String , Number , Boolean , Object, Array, Undefined 
 
-let a1 = '1' ;  //string
+let a1 = '123' ;  //string
 let a2 = 1 ;    //Number
 let a3 = true ;  //Bollean
 let a4 ;         //Undefiend
@@ -50,6 +50,7 @@ const myObject = {
 
 console.log(myObject);
 myObject.age = 27 ; //Object value can be updated
+myObject.lastName = 'Kumar'; 
 console.log(myObject);
 
 /*myObject = {
