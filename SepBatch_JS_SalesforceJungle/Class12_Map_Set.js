@@ -62,3 +62,40 @@ for(let currItem of favPlace.values()){
     console.log(currItem);
     
 }
+
+
+/*Set Collections
+method
+new Set() ----> create the Set  
+set.add(value) ---> stores the value
+set.has(value) -----> returns these if the value exists. false otherwise.
+set.delete(value) ---> remove the element by the value.
+set.clear()-----> removes everything from the Set.
+set.size()-----> returns the current elememnt count.*/
+
+console.log('Set Collections');
+let mySet = new Set();
+console.log('mySet', mySet);
+mySet.add('Ankit');
+mySet.add(50);
+mySet.add(true);
+mySet.add('Ankit');
+console.log('mySet', mySet);
+
+console.log('size', mySet.size);
+
+console.log(mySet.has('Ankit'));
+console.log(mySet.has('ankit'));
+mySet.delete('Ankit');
+console.log('mySet', mySet);
+mySet.clear();
+console.log('mySet', mySet);
+console.log('size', mySet.size);
+
+let myfavcities = new Set(['Bhubaneswar', 'Pune', 'Goa', 'Jaipur', 'Bhubaneswar']);
+console.log('myfavcities', myfavcities);
+
+for(let city of myfavcities){
+    console.log(city);
+    
+}
