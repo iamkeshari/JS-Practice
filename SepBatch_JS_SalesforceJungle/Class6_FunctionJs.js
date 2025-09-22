@@ -65,7 +65,7 @@ function calc1(number1, number2) {
     return sum;
 };
 
-// Function Expression
+// Function Expression //Recommended
 let calc2 = function (number1, number2) {
     let sum = number1 + number2;
     return sum;
@@ -92,3 +92,48 @@ function goodBye(){
 }
 welcomeMe('Biplab',greetMeToo);
 welcomeMe('Biplab',goodBye);
+
+
+//arrow function ES- 6
+
+let calc3 = (number1, number2) => {
+    let sum = number1 + number2;
+    return sum;
+}
+let calc3Result = calc3(33, 20);
+console.log('calc3Result', calc3Result);
+
+//without function
+let greet = function(name){
+    return `Good Morning, ${name}`;
+}
+console.log(greet('Biplab'));
+
+
+// with arrow function
+let greet1 = (name) => {
+    return `Good Morning, ${name}`;
+}
+console.log(greet1('Biplab'));
+
+let greet2 = name => `Good Morning, ${name}`; // if only one parameter no need to use ()
+console.log(greet2('Biplab'));
+
+//Callback function 
+function welcome(name, callback){
+    console.log(`Hello, ${name}`);
+    callback();
+}
+function greet(){
+    console.log('Welcome to JS Practice');
+}
+
+function goodBye(){
+    console.log('See you tomorrow');
+}
+
+welcome('Biplab', greet);
+welcome('Biplab', goodBye);
+
+
+
