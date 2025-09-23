@@ -4,8 +4,7 @@ let myDetails = 'My Name is Biplab';
 console.log(myDetails.length);
 
 //Extracting the string
-
-let text = 'Apple , Banana , kiwi'
+let text = 'Apple, Banana, kiwi'
 console.log(text);
 
 //Slice(StartPosition , End Position + 1)
@@ -18,14 +17,40 @@ console.log(sliceBanana);
 let sliceRemaining = text.slice(7)
 console.log(sliceRemaining);
 
-//Replace
-const paragraph16 = "I think Ruth's dog is cuter than your dog!";
+//slice with negative index start position
+let part = text.slice(-1)
+console.log(part);
 
+//substring(start position, end)
+//in substring if you pass negative index it will consider as 0
+let subStringBanana = text.substring(7, 14)
+console.log(subStringBanana);
+
+let subStringRemaining = text.substring(-1)
+console.log(subStringRemaining);
+
+//substr(start position, length)
+let subStrBanana = text.substr(7, 6)
+console.log(subStrBanana);
+
+//Replace
+//replace - it will replace only first match
+// replace is case sensitive
+// replace will not modify the original string
+
+
+const paragraph16 = "I think Ruth's dog is cuter than your dog!";
 console.log(paragraph16.replace("Ruth's", 'my'));
 
 //upercase and lowercase
 console.log(myDetails.toUpperCase());
 console.log(myDetails.toLowerCase());
+
+//trim , trimStart , trimEnd
+let myString = '       Hello World       ';
+console.log(myString.trim());
+console.log(myString.trimStart());
+console.log(myString.trimEnd());
 
 //padStart , padEnd
 
@@ -70,3 +95,15 @@ console.log(fruit.endsWith('kiwi'));
 //brek the string with array --->Split
 //convert array into Set --> conversion
 //Combine the set ---> Join
+
+let myString1 = 'My name is Biplab Keshari. I live in Bangalore.';
+let myArray = myString1.split(' ');
+console.log(myArray);
+
+let finalarray = [];
+myArray.map((currentItem) => {
+    if (!finalarray.includes(currentItem)) {
+        finalarray = [...finalarray, currentItem];
+    } 
+});
+console.log(finalarray.join);  
