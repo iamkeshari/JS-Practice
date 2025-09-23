@@ -12,7 +12,43 @@ let studentsNew = [Student1New,Student2New,Student3New];
 let allStudents = [...studentsNew,...students]; // add 2 array in single array
 console.log(allStudents);
 
+/* Tech Journey - Youtube Channel */
+console.log('Spread Operator in JavaScript');
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combinedArr = [...arr1, ...arr2];
+console.log('Combined Array:', combinedArr);
+
 // Expand the string
 let myName = 'My Name is Biplab ';
 console.log(myName);
 console.log(...myName);
+
+//add element in array
+let arr = [1, 2, 3];
+let newArr = [...arr, 4, 5, 6,];
+console.log('New Array:', newArr);
+
+let newArr2 = [20,21,22,...arr];
+console.log('New Array 2:', newArr2);
+
+
+//adding elements of one object to another object
+let obj1 = {'Name':'Sonia','Age':24, skills:['Java','JavaScript']};
+let obj2 = { lNamec:'Jain' ,country: 'India' };
+let combinedObj = { ...obj1, ...obj2 };
+console.log('Combined Object:', combinedObj);
+
+//copy on array and object
+let myfruits = ['apple', 'banana', 'mango'];
+let copiedFruits = myfruits;
+
+let copiedFruits2 = [...myfruits]; 
+console.log('myfruits:', copiedFruits2); 
+
+console.log('Copied Fruits:', copiedFruits);
+
+copiedFruits.push('orange');
+console.log('After adding orange to copiedFruits');
+console.log('myfruits:', myfruits);  //deep copy
+console.log('copiedFruits:', copiedFruits);
